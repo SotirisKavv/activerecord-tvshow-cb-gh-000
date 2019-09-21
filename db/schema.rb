@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2) do
 
   create_table "shows", force: :cascade do |t|
-    t.string "title"
+    t.string "name"
     t.string "day"
     t.string "network"
     t.integer "rating"
