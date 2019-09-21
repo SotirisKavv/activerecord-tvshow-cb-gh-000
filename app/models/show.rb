@@ -1,5 +1,6 @@
 class Show < ActiveRecord::Base
   def self.highest_rating
-    Show.order(rating: :desc).limit(1)
+    Show.select(:rating).order(rating: :desc).limit(1)
   end
+
 end
